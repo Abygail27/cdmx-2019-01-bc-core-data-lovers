@@ -15,40 +15,30 @@ jumpto(anchor)(); {
 window.location.href = "#"+anchor;
 }
 });
-const filterCountryIndicator = () =>{
-  let select = selectOption.value; //value "MEX", "PER","BRA","CHL"
-    //console.log(select);
-     let country = window.filterCountry(select); 
-     objectKey (country); 
-}
-selectOption.addEventListener('change',filterCountryIndicator); 
-const objectKey = (country)=>{
-let answer="";
- for (let i in country) 
-  {
-    answer+="<li>"+"<b>"+i+":  "+"</b>"+country[i].toFixed(2)+"%"+"</li>"+"<br>"; 
-  document.getElementById('show-content').innerHTML = answer;   
- return answer
-}
 
-//countries.addEventListener('change', () => { //Impresión Database para cada país
-  //let enclick = selectorPais.value;
-  //if (enclick === 'countries') {
-    //dataGlobal.forEach(element => {
+const mex = WORLDBANK.MEX.indicators; 
+const chl = WORLDBANK.CHL.indicators; 
+const bra = WORLDBANK.BRA.indicators; 
+const per = WORLDBANK.PER.indicators; 
+
+countries.addEventListener('change', () => { //Impresión Database para cada país
+  let enclick = selectorPais.value;
+  if (enclick === 'countries') {
+    dataGlobal.forEach(element => {
       
-   // });
-    // console.log(dataMEX[15].data)
-    //for (const año in años) {
-      //if (años.hasOwnProperty(año)) {
-        //let element = años[año];
-        //element = parseFloat(element)
-        // console.log(  parseInt(element)) 
-        //if (element > 0) {
-          //console.log(element)
-     //   }
-     // }
-    //}
+   });
+    console.log(dataMEX[15].data)
+    for (const año in años) {
+      if (años.hasOwnProperty(año)) {
+        let element = años[año];
+        element = parseFloat(element)
+        console.log(  parseInt(element)) 
+        if (element > 0) {
+        console.log(element)
+       }
+     }
+    }
 
-  //}
+  }
 
-}
+});
