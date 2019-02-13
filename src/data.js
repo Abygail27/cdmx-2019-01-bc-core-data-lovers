@@ -1,12 +1,6 @@
-window.WORLDBANK; 
+window.WORLDBANK;{
+
+filter: (dataBank,selectOption)
 
 
-
-
-
-
-
-
-
-
-
+}
