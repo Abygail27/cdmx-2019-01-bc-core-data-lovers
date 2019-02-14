@@ -1,17 +1,14 @@
-//const botonInfo = document.getElementById('informate'); //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
-const welcomePage = document.getElementById('welcomePage');
-//const pageForData = document.getElementById('info');
-const dataBank = window.WORLDBANK;
-//const pagesjumps = document.getElementById('commits', 'impact') //constantes para brincar a la section que se utiliza como una pagina
-const countryfilter = document.getElementById('countryfilter');
-//const content = document.getElementById('show-content');
-//const indicators = document.getElementById('indicator');
-const indicadoresHTML = document.getElementById('indicadores')
+ const welcomePage = document.getElementById('welcomePage');
+ const dataBank = window.WORLDBANK;
+ const countryfilter = document.getElementById('countryfilter');
+ const indicadoresHTML = document.getElementById('indicadores')
 
 document.getElementById('informate').addEventListener('click', () => {
   welcomePage.style.display = 'none';
 
 });
+
+
 
 //se trasladó al documento data.js
 /*const filterCountryIndicator = () => {
@@ -36,14 +33,4 @@ document.getElementById('countryfilter').addEventListener('change', () => {
   })
 
 });
-//console.log(dataMEX[15].data)
-/*for (const año in años) {
-  if (años.hasOwnProperty(año)) {
-    let element = años[año];
-    element = parseFloat(element)
-    console.log(parseInt(element))
-    if (element > 0) {
-      console.log(element)
-    }
-  }
-}*/
+
