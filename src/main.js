@@ -1,20 +1,9 @@
 
-//const botonInfo = document.getElementById('informate'); //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
-const welcomePage = document.getElementById('welcomePage');
-//const pageForData = document.getElementById('info');
 const dataBank = window.WORLDBANK;
-//const pagesjumps = document.getElementById('commits', 'impact') //constantes para brincar a la section que se utiliza como una pagina
 const countryfilter = document.getElementById('countryfilter');
-//const content = document.getElementById('show-content');
-//const indicators = document.getElementById('indicator');
-const indicadoresHTML = document.getElementById('indicadores')
+const indicadoresHTML = document.getElementById('indicadores');
 
-document.getElementById('informate').addEventListener('click', () => {
-  welcomePage.style.display = 'none';
-
-
-});
-
+//función para dirigir a las secciones 
 
 //esta función es filter en data.js
   const filtroDeIndicadores = document.getElementById('countryfilter').addEventListener('change', () => { //Impresión Database para cada país
