@@ -218,7 +218,6 @@ section {
 #whoAreWe{
 
 padding-bottom: -30%;
-background-image: url("imagenes/vision.png");
 background-size: cover;
 width: 100%;
 height: 100%;
@@ -228,15 +227,12 @@ text-align: center;
 }
 
 #vision{
+background-color: rgb(224, 75, 75);
 text-indent: 80px;
 text-align: left;
 font-family: 'Dosis', sans-serif;
 font-size: 15px;
--moz-transform: translate(30px, 50px);
--webkit-transform: translate(30px, 50px);
--o-transform: translate(30px, 50px);
--ms-transform: translate(30px, 50px);
-transform: translate(30px, 50px);
+transform: translate(400px, 50px);
 }
 
 #community{
@@ -318,19 +314,11 @@ cursor: pointer;
  #intentoDeGrafica{
 width: 500px;
  height: 500px;
- -moz-transform: translate(450px, 110px);
- -webkit-transform: translate(450px, 110px);
- -o-transform: translate(450px, 110px);
- -ms-transform: translate(450px, 110px);
  transform: translate(450px, 110px);
  }
 
 #allGraphicContent{
-  -moz-transform: translate(112px, 50px);
-  -webkit-transform: translate(112px, 50px);
-  -o-transform: translate(112px, 50px);
-  -ms-transform: translate(112px, 50px);
-  transform: translate(112px, 50px);
+  transform: translate(540px, 50px);
 }
 
 table{
