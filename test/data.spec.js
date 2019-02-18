@@ -16,7 +16,8 @@ describe('dataBank.MEX', () => {
 
 
 
-describe('filter',()=>{
+
+describe('filterCountry',()=>{
   it('filter debería ser una función',()=>{
     expect(typeof window.dataBank.filter).toBe('function');
   });
@@ -25,7 +26,7 @@ expect(window.dataBank.filter(window.dataBank,"MEX")).toEqual("MEX")
     } );
 });
 
-describe('filterEdu',()=>{
+describe('filterIndicator',()=>{
   it('filterEdu debería ser una función',()=>{
     expect(typeof window.dataBank.filterEdu).toBe('function');
   })
