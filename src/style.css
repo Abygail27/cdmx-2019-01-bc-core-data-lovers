@@ -108,7 +108,7 @@ header .container {
 /* estilos para el main en el banner*/
 section {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 119px;
 }
 
 #banner {
@@ -313,4 +313,15 @@ i{
 font-size: 25px;
 cursor: pointer;
 }
+
+ #intentoDeGrafica{
+width: 500px;
+ height: 500px;
+ -moz-transform: translate(450px, 110px);
+ -webkit-transform: translate(450px, 110px);
+ -o-transform: translate(450px, 110px);
+ -ms-transform: translate(450px, 110px);
+ transform: translate(450px, 110px);
+ }
+
 
