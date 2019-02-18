@@ -14,28 +14,16 @@ describe('dataBank.MEX', () => {
   })
 })
 
-describe('dataBank.PER',()=>{
-  it('PER debería ser un objeto', ()=>{
-    expect(typeof dataBank).toBe('object');
-  })
-})
 
-describe('dataBank.BRA',()=>{
-  it('BRA debería ser un objeto', ()=>{
-    expect(typeof dataBank).toBe('object');
-  })
-})
-describe('dataBank.CHL',()=>{
-  it('CHL debería ser un objeto',()=>{
-    expect(typeof dataBank).toBe('object');
-  })
-})
 
 describe('filter',()=>{
   it('filter debería ser una función',()=>{
     expect(typeof window.dataBank.filter).toBe('function');
-  })
-})
+  });
+  it('Debería devolver MEX al elegir MEX',()=>{
+expect(window.dataBank.filter(window.dataBank,"MEX")).toEqual("MEX")
+    } );
+});
 
 describe('filterEdu',()=>{
   it('filterEdu debería ser una función',()=>{
