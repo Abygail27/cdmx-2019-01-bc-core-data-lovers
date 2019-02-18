@@ -94,7 +94,7 @@ header .container {
     display: flex;
   }
 
-  #header label {
+  header label {
     display: none;
   }
 
@@ -325,6 +325,10 @@ width: 500px;
  }
 
 #allGraphicContent{
-background-color: blueviolet;
-
+  -moz-transform: translate(112px, 50px);
+  -webkit-transform: translate(112px, 50px);
+  -o-transform: translate(112px, 50px);
+  -ms-transform: translate(112px, 50px);
+  transform: translate(112px, 50px);
 }
+
