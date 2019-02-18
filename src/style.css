@@ -323,9 +323,11 @@ width: 500px;
 
 table{
 border-collapse: separate;
+padding-left: 39%;
 }
 td {
 border:gray 2px solid;
 margin: 20px;
-  padding: 20px;
+padding: 20px;
+
 }
