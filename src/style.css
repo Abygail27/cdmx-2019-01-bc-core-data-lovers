@@ -27,6 +27,7 @@ header {
 .container {
   width: 98%;
   margin: auto;
+  
   /*para que los contenedores esten alineados*/
 }
 
@@ -95,7 +96,7 @@ header .container {
   }
 
   header label {
-    display: none;
+    display: none !important;
   }
 
   .menu a {
@@ -332,3 +333,11 @@ width: 500px;
   transform: translate(112px, 50px);
 }
 
+table{
+border-collapse: separate;
+}
+td {
+border:gray 2px solid;
+margin: 20px;
+  padding: 20px;
+}
