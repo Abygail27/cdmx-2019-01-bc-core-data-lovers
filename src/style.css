@@ -200,6 +200,7 @@ section {
   transform: translate(0px, 50px);
   width: 300px;
   border: 25px;
+  margin-left: -1138px;
 
 }
 
@@ -230,7 +231,7 @@ text-align: center;
 #vision{
   background-color: rgb(224, 75, 75);
   text-indent: 80px;
-  text-align: left;
+  text-align: center;
   font-family: 'Dosis', sans-serif;
   font-size: 2vw;
   transform: translate(2px, 50px);

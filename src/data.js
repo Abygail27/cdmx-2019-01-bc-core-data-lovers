@@ -1,7 +1,6 @@
 
 window.WorldBank = {
   dataShownForCountries: (data, countries) => { 
-    console.log(data)
   let objectsForCountry = data[countries].indicators;
   return objectsForCountry;
   },
