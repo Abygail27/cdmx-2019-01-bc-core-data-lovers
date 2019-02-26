@@ -11,18 +11,18 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
 
 
 </head>
 <header>
   <div id="container">
-      <h1 class="title">FEMEDUCA</h1>
+    <h1 class="title">FEMEDUCA</h1>
     <input type="checkbox" id="menu-bar">
     <label class="fas fa-bars" for="menu-bar"></label>
     <nav class="menu">
-        <a href="#whoAreWe">¿Quiénes somos?</a>
+      <a href="#whoAreWe">¿Quiénes somos?</a>
       <a href="#joinUs">Únete</a>
       <a href="#events">Eventos</a>
       <a href="#contact">Contacto</a>
@@ -47,23 +47,26 @@
   <div id="text">
     <p><b>Femeduca</b> es una herramienta que proporciona información estadística de cuatro países principales de
       Latinoamérica: México, Perú, Chile y Brasil.
-      Para ello se ha recurrido a información disponible en el   <b><em>Banco Mundial</em></b>    que aluden a la realidad regional.<br><br>
+      Para ello se ha recurrido a información disponible en el <b><em>Banco Mundial</em></b> que aluden a la realidad
+      regional.<br><br>
       Los datos estadísticos proporcionan la experiencia educativa de las mujeres.
       Indudablemente, el acceso a la educación, la permanencia y la movilidad a lo largo del sistema, son indicadores
       importantes de sus logros en el plano de la igualdad educativa, la inserción y oportunidad en la ciencia.
     </p>
   </div>
   <section id="selectors">
-    <select id="countryfilter" name="countries">
-      <option>Selecciona un país</option>
+    <select class="country">
+      <option id="countryone">selecciona un país</option>
       <option value="MEX">México</option>
-      <option value="PER">Perú</option>
       <option value="BRA">Brasil</option>
+      <option value="PER">Perú</option>
       <option value="CHL">Chile</option>
     </select>
-    <select name="indicadores" id="indicadores">
-      <option value="indicadores">Indicadores</option>
+
+    <select name="selectorForCountry" id="indicators">
+      <option value="indicatorsCountry">Indicadores</option>
     </select>
+
 
   </section>
 
@@ -73,7 +76,7 @@
         <tr>
         </tr>
       </thead>
-      
+
     </table>
   </section>
 
@@ -86,9 +89,7 @@
         <tr>
         </tr>
       </thead>
-      <tbody id="intentoDeTabla"></tbody>
-    </table>
-    
+      <tbody id="contentForIndicatorsValueInATable"></tbody>
     </table>
   </section>
   <!--FIN DE DIV PARA VISUALIZAR-->
@@ -108,16 +109,20 @@
 
 
 
-<section id = "whoAreWe">
-<p id= "vision">
-  <b> ¿Quiénes somos?<br></b>
-    Femeduca es una herramienta comprometida a brindar a las mujeres de México, <br> Chile, Perú y Brasil una educación de calidad.<br>
-     Se busca generar empatía y una comunidad de investigadores,  <br>profesores y científicos que deseen brindar sus conocimientos <br> y dedicación a las mujeres  y niñas en estas regiones.<br>
-     <br>Esto se logra a través de la participación activa en eventos dedicados <br> principalmente a la ciencia que buscan generar unión para lograr insertar a la mujer  <br>en el área científica.<br>
-     <br>
-     <br>
-     <b> Nuestra visión <br></b>
-    Una América Latina donde todas las mujeres puedan desarrollar sus habilidades  <br>y especializarlas en el área científica y tecnológica.</p>
+<section id="whoAreWe">
+  <p id="vision">
+    <b> ¿Quiénes somos?<br></b>
+    Femeduca es una herramienta comprometida a brindar a las mujeres de México, <br> Chile, Perú y Brasil una educación
+    de calidad.<br>
+    Se busca generar empatía y una comunidad de investigadores, <br>profesores y científicos que deseen brindar sus
+    conocimientos <br> y dedicación a las mujeres y niñas en estas regiones.<br>
+    <br>Esto se logra a través de la participación activa en eventos dedicados <br> principalmente a la ciencia que
+    buscan generar unión para lograr insertar a la mujer <br>en el área científica.<br>
+    <br>
+    <br>
+    <b> Nuestra visión <br></b>
+    Una América Latina donde todas las mujeres puedan desarrollar sus habilidades <br>y especializarlas en el área
+    científica y tecnológica.</p>
 </section>
 
 <section id="joinUs">
@@ -184,6 +189,7 @@
   <!-- <script src="./data/lol/lol.js"></script> -->
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 
 </html>

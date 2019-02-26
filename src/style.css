@@ -156,7 +156,7 @@ section {
   text-align: center;
 }
 
-#countryfilter {
+.country {
   -moz-transform: translate(0px, 50px);
   -webkit-transform: translate(0px, 50px);
   -o-transform: translate(0px, 50px);
@@ -168,11 +168,11 @@ section {
 
 }
 
-#countryfilter:hover {
+.country:hover {
   color: gray;
 }
 
-#indicadores {
+#indicators{
   -moz-transform: translate(0px, 50px);
   -webkit-transform: translate(0px, 50px);
   -o-transform: translate(0px, 50px);
@@ -182,7 +182,7 @@ section {
   border: 25px;
 }
 
-#indicadores:hover {
+#indicators:hover {
   color: gray;
 }
 
@@ -224,15 +224,18 @@ height: 100%;
 padding-bottom: 15%;
 text-decoration:none;
 text-align: center;
+
 }
 
 #vision{
-background-color: rgb(224, 75, 75);
-text-indent: 80px;
-text-align: left;
-font-family: 'Dosis', sans-serif;
-font-size: 15px;
-transform: translate(400px, 50px);
+  background-color: rgb(224, 75, 75);
+  text-indent: 80px;
+  text-align: left;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2vw;
+  transform: translate(2px, 50px);
+  color: white;
+
 }
 
 #community{

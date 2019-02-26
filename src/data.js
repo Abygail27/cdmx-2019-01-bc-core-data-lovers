@@ -1,31 +1,24 @@
-//Funciones puras
 
-
-window.dataBank = {
-  filter: (dataBank, countryfilter) => {
-    let enclick = countryfilter.value;
-    let dataMostrar = dataBank[enclick]
-    let indicators = dataMostrar.indicators;
-
-    indicators.forEach(indicator => {
-
-      let indicatorName = indicator.indicatorName;
-      let vare = new RegExp(/educación/i)
-      if (indicatorName.match(vare) != null) {
-        return countryfilter
-      }
-    })
+window.WorldBank = {
+  dataShownForCountries: (data, countries) => { 
+    console.log(data)
+  let objectsForCountry = data[countries].indicators;
+  return objectsForCountry;
   },
+  educationalIndicators:(data, matchingTheSelection) =>{ 
+    let newDataThatMatchesTheSelection= {};
+    data.forEach(objectOfTheData => { 
+      if(objectOfTheData.indicatorName === matchingTheSelection){ 
+        newDataThatMatchesTheSelection = objectOfTheData.data;
+        return newDataThatMatchesTheSelection;
+      }
+    });
+    return newDataThatMatchesTheSelection;
+  },
+  
+  }
 
- filterEdu: (countryfilter,indicators) => {
-    indicators.forEach(indicator => {
 
-        let indicatorName = indicator.indicatorName;
-        let vare = new RegExp(/educación/i)
-        if (indicatorName.match(vare) != null) {
-          return countryfilter
-        }
-      });
-    }
-    }
-   
+
+
+
