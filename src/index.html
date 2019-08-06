@@ -1,185 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Femeduca</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-
-
-
-
-</head>
-<header>
-  <div id="container">
-    <h1 class="title">FEMEDUCA</h1>
-    <input type="checkbox" id="menu-bar">
-    <label class="fas fa-bars" for="menu-bar"></label>
-    <nav class="menu">
-      <a href="#whoAreWe">¿Quiénes somos?</a>
-      <a href="#joinUs">Únete</a>
-      <a href="#events">Eventos</a>
-      <a href="#contact">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-
-<main>
-  <section id="banner">
-    <img src="imagenes/girls together.jpg">
-    <div class="container">
-      <h2>Derecho a la educación y al bienestar futuro.</h2>
-      <p>Apoyando a las mujeres y niñas de latinoamérica <br> a acceder a la educación. </p>
-      <a href="#content-showing">Infórmate y participa</a>
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+      
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a class="w3-bar-item w3-button w3-text-red  w3-padding-large">Femeduca</a>
+  
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right -align">¿Quiénes somos?</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white  w3-right">Únete</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white  w3-right">Eventos</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white  w3-right">Contacto</a>
     </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">¿Quiénes somos?</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Únete</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Eventos</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Contacto</a>
+    </div>
+  </div>
 
-  </section>
-</main>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-<section id="content-showing">
-  <div id="text">
-    <p><b>Femeduca</b> es una herramienta que proporciona información estadística de cuatro países principales de
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80 " style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>La educación es un derecho humano</h3>
+      <p><b> instrumento indispensable para alcanzar los objetivos de la igualdad, el desarrollo y la paz.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.unsplash.com/photo-1452830978618-d6feae7d0ffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3> La educación no discriminatoria </h3>
+      <p><b>beneficia tanto a las niñas como a los niños. </b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.unsplash.com/photo-1514369118554-e20d93546b30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>conduce a relaciones más igualitarias</h3>
+      <p><b>entre mujeres y hombres.</b></p>    
+    </div>
+  </div>
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Femeduca</h2>
+    <p class="w3-justify">es una herramienta que proporciona información estadística de cuatro países principales de
       Latinoamérica: México, Perú, Chile y Brasil.
       Para ello se ha recurrido a información disponible en el <b><em>Banco Mundial</em></b> que aluden a la realidad
       regional.<br><br>
       Los datos estadísticos proporcionan la experiencia educativa de las mujeres.
       Indudablemente, el acceso a la educación, la permanencia y la movilidad a lo largo del sistema, son indicadores
-      importantes de sus logros en el plano de la igualdad educativa, la inserción y oportunidad en la ciencia.
-    </p>
+      importantes de sus logros en el plano de la igualdad educativa, la inserción y oportunidad en la ciencia.</p>
+    <div class="w3-row w3-padding-32">
+      <section id="selectors">
+        <select class="country">
+          <option id="countryone">selecciona un país</option>
+          <option value="MEX">México</option>
+          <option value="BRA">Brasil</option>
+          <option value="PER">Perú</option>
+          <option value="CHL">Chile</option>
+        </select>
+        <select name="selectorForCountry" id="indicators">
+          <option value="indicatorsCountry">Indicadores</option>
+        </select>
+      </section>
   </div>
-  <section id="selectors">
-    <select class="country">
-      <option id="countryone">selecciona un país</option>
-      <option value="MEX">México</option>
-      <option value="BRA">Brasil</option>
-      <option value="PER">Perú</option>
-      <option value="CHL">Chile</option>
-    </select>
-
-    <select name="selectorForCountry" id="indicators">
-      <option value="indicatorsCountry">Indicadores</option>
-    </select>
 
 
-  </section>
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    aqui van las graficas
 
-  <section id="allGraphicContent">
-    
 
-  <section id="show-content">
-    <!--DIV PARA VISUALIZAR TABLA-->
-    <div id="estadisticaAlta">Aqui va la Estadistica más alta</div>
-    <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <h5 id="data-year"></h5>
-        </div>
-      </div>
-  </section>
-  <!--FIN DE DIV PARA VISUALIZAR-->
-
-  <section id="graphics">
-    <!--DIV PARA VISUALIZAR GRÁFICAS-->
-    <button class="btn" id="visualizarGrafica"><i class="fas fa-chart-pie"></i></button>
-    <button class="btn" id="sort"><i class="fas fa-sort-numeric-up"></i></button>
-
-    <div id="intentoDeGrafica">
+   
     </div>
-  </section>
-</section>
-
-
-
-
-
-<section id="whoAreWe">
-  <p id="vision">
-    <h2>¿Quiénes somos?<br></b></h2>
-    Femeduca es una herramienta comprometida a brindar a las mujeres de México, <br> Chile, Perú y Brasil una educación
-    de calidad.<br>
-    Se busca generar empatía y una comunidad de investigadores, <br>profesores y científicos que deseen brindar sus
-    conocimientos <br> y dedicación a las mujeres y niñas en estas regiones.<br>
-    <br>Esto se logra a través de la participación activa en eventos dedicados <br> principalmente a la ciencia que
-    buscan generar unión para lograr insertar a la mujer <br>en el área científica.<br>
-    <br>
-    <br>
-    <h2><b> Nuestra visión <br></b></h2>
-    Una América Latina donde todas las mujeres puedan desarrollar sus habilidades <br>y especializarlas en el área
-    científica y tecnológica.</p>
-</section>
-
-<section id="joinUs">
-  <div id="community">
-    <p><i class="fas fa-users"></i><br>
-      La ciencia como bien común.
-    </p>
   </div>
-  <div id="science">
-    <p><i class="fas fa-female"></i><br>
-      Mujeres en la ciencia.
-    </p>
+
+
+  <div class="w3-red" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">¿Quiénes somos?</h2>
+      
+        Femeduca es una herramienta comprometida a brindar a las mujeres de México, <br> Chile, Perú y Brasil una educación
+        de calidad.<br>
+        Se busca generar empatía y una comunidad de investigadores, <br>profesores y científicos que deseen brindar sus
+        conocimientos <br> y dedicación a las mujeres y niñas en estas regiones.<br>
+        <br>Esto se logra a través de la participación activa en eventos dedicados <br> principalmente a la ciencia que
+        buscan generar unión para lograr insertar a la mujer <br>en el área científica.<br>
+        <br>
+        <br>
+        <h2><b> Nuestra visión <br></b></h2>
+        Una América Latina donde todas las mujeres puedan desarrollar sus habilidades <br>y especializarlas en el área
+        científica y tecnológica.</p>
+    </section>
+
+   
+    </div>
   </div>
-  <div id="decides">
-    <p><i class="far fa-handshake"></i><br>
-      Toma de decisiones en la educación e inclusión para las mujeres.
-    </p>
+
+ 
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Contacto</h2>
+
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Ciudad de México, México<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: femeducal@mail.com<br>
+      </div>
+
+
+    
+   
+
+      <div class="w3-col m6">
+        <section id="events">
+          <div id="positioning-text">
+            Asiste a los proximos eventos.<br>
+            El equipo de la Marcha por la Ciencia en México somos estudiantes, académicos e investigadores unidos<br>
+            como un grupo diverso que hace un llamado para reconocer la importancia de la Ciencia.<br>
+            EVENTOS<br>
+            CDMX<br>
+        
+            Ángel de la Independencia<br>
+        
+            14 de Abril<br>
+        
+            2018 16:00pm - 20:00pm<br>
+            <br>
+            <a href="http://www.marchaporlacienciamx.org/index.php">Marcha por la ciencia México</a>
+          </div>
+        </section>
+      </div>
+    </div>
   </div>
-  <div id="education">
-    <p><i class="fas fa-graduation-cap"></i><br>
-      Educación de vanguardia.
-    </p>
-  </div>
-</section>
-<section id="events">
-  <div id="positioning-text">
-    Asiste a los proximos eventos.<br>
-    El equipo de la Marcha por la Ciencia en México somos estudiantes, académicos e investigadores unidos<br>
-    como un grupo diverso que hace un llamado para reconocer la importancia de la Ciencia.<br>
-    EVENTOS<br>
-    CDMX<br>
+  
+<!-- End Page Content -->
+</div>
 
-    Ángel de la Independencia<br>
+<!-- Image of location/map -->
+<img src="https://www.eleconomista.com.mx/__export/1523838306568/sites/eleconomista/img/2018/04/15/marcha_por_la_ciencia_x2x.jpg_1348255499.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
-    14 de Abril<br>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Femeduca @2019</p>
+</footer>
 
-    2018 16:00pm - 20:00pm<br>
-    <br>
-    <a href="http://www.marchaporlacienciamx.org/index.php">Marcha por la ciencia México</a>
-  </div>
-</section>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
 
-<section id="contact">
-  <i class="fab fa-facebook-f"></i>
-  <i class="fab fa-twitter"></i>
-  <i class="fab fa-instagram"></i>
-</section>
-<!--FIN DE DIV DE VISUALIZACIÓN DE GRÁFICAS-->
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
 
-<body>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
-
-
-
-
-
-
-
-  <!-- <script src="./data/injuries/injuries.js"></script> -->
-  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-  <!-- <script src="./data/steam/steam.js"></script> -->
-  <script src="./data/worldbank/worldbank.js"></script>
-  <!-- <script src="./data/lol/lol.js"></script> -->
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
-
 </html>

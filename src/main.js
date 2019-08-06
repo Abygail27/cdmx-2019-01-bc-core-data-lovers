@@ -1,3 +1,4 @@
+    
 let WORLDBANK; 
 const dataWorldbank = window.WORLDBANK; 
 const selectForCountries = document.getElementsByClassName("country");
@@ -28,4 +29,4 @@ const printData = (theResultShouldBe, countries) => {
     selectForCountries[i].addEventListener('change', addingTheCountryEvent); 
   }
  
-         
+     
